@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- There really isn't anything interesting to see here! -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Encode+Sans" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>jQuery</h1>
+        <dl>
+            <dt>Show / Hide</dt>
+            <dd>
+                <!-- Hide / Show / Toggle -->
+                <div id="hide">Hide</div>
+                <div id="show">Show</div>
+                <div id="toggle">Toggle</div>
+            </dd>
+            <dt>Attributes</dt>
+            <dd>
+                <ol>
+                    <li id="attr-btn-div">
+                        <button>Disable</button>
+                    </li>
+                    <li id="set-output">
+                        <!-- Set the text of the dts element to the number of dt tags in the document -->
+                        <p>There are
+                            <span id="dts">&lt;dts&gt;</span> dts on the page</p>
+                    </li>
+                    <li id="checked-prop">
+                        <label for="cb">Check
+                                <input id="cb" type="checkbox">
+                            </label>
+                    </li>
+                    <li>
+                        <!-- Set the placeholder to "placeholder" -->
+                        <label for="placeholder">Placeholder</label>
+                        <input id="placeholder" type="text">
+                    </li>
+                </ol>
+            </dd>
+            <dt>Fading</dt>
+            <dd>
+                <!-- Fading is a nice way to hide content after displaying it -->
+                <p class="fader">Fade away</p>
+            </dd>
+            <dt>Events</dt>
+            <dd>
+                <ol>
+                    <li>
+                        <!-- You can attach a handler which will handle a single event using .one(), then detach -->
+                        <button id="one">One click button</button>
+                    </li>
+                    <li>
+                        <!-- Handle events with on() -->
+                        <button id="multiple">Multiple click button</button>
+                    </li>
+                </ol>
+            </dd>
+            <dt>Cloning elements</dt>
+            <dd>
+                <ol>
+                    <li id="src">
+                        Source
+                        <em>Data</em>
+                    </li>
+                    <!-- Use jQuery's clone function to clone li#src and append it after it -->
+                </ol>
+            </dd>
+            <dt>Apply a change to all elements in a collection</dt>
+            <dd>
+                <p>Select all the &lt;dt&gt; tags and add the
+                    <em>iterated</em> class
+                </p>
+            </dd>
+            <dt>Moving elements (detach)</dt>
+            <dd>
+                <!-- Detach the placeholder input and place it in the div below -->
+                <div id="placeholder-target"></div>
+            </dd>
+            <dt>Ajax - Psalm of Life</dt>
+            <dd>
+                <div id="psalm-of-life">
+                    <!-- Use Ajax to load Henry Wadsworth Longfellow's Psalm of Life here -->
+                    <!-- https://dojotoolkit.org/documentation/tutorials/1.9/ajax/resources/text/psalm_of_life.txt -->
+                </div>
+            </dd>
+        </dl>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
